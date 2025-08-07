@@ -199,6 +199,18 @@
   .-right-\[100px\] {
     right: calc(100px * -1);
   }
+  .right-\[-4\%\] {
+    right: -4%;
+  }
+  .right-\[-5\%\] {
+    right: -5%;
+  }
+  .right-\[-5\] {
+    right: -5;
+  }
+  .right-\[-8\%\] {
+    right: -8%;
+  }
   .right-\[-10\%\] {
     right: -10%;
   }
