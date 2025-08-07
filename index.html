@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ostad</title>
+    <title>Qsse</title>
     <link rel="stylesheet" href="style/output.css" />
   </head>
   <body>
@@ -37,17 +37,25 @@
           </ul>
         </div>
         <!--------------------------------------- menu bar ---------------->
-        <div class="w-1/2 h-full lg:hidden">
+        <div class="w-1/2 h-full lg:hidden" id="menuBar">
           <div
-            class="w-12 h-full flex flex-col items-center justify-around py-3 cursor-pointer"
+            class="relative w-12 h-12 flex flex-col items-center justify-center cursor-pointer group"
             id="menuIcon"
           >
-            <div class="w-6 h-0.5 bg-white"></div>
-            <div class="w-6 h-0.5 bg-white"></div>
-            <div class="w-6 h-0.5 bg-white"></div>
+            <span
+              id="firstLine"
+              class="absolute w-6 h-0.5 bg-white transition-all duration-300 ease-in-out translate-y-[-8px]"
+            ></span>
+            <span
+              id="middleLine"
+              class="absolute w-6 h-0.5 bg-white transition-all duration-300 ease-in-out"
+            ></span>
+            <span
+              id="lastLine"
+              class="absolute w-6 h-0.5 bg-white transition-all duration-300 ease-in-out translate-y-[8px]"
+            ></span>
           </div>
         </div>
-
         <!---------------------- links ------------------------------------------->
         <ul
           class="lg:w-8/12 hidden lg:flex lg:justify-center *:text-white **:flex **:justify-between **:items-center"
@@ -99,7 +107,12 @@
         </div>
       </nav>
     </header>
-
+    <!--------------------------------------- menu bar sub menu ------------------->
+    <section
+      class="w-[90%] h-[100vh] right-1/2 top-24 translate-x-1/2 mx-auto border border-[#2d223f] bg-gradient-to-r from-[#0e012200] via-[#4708715d] to-[#0e012200] backdrop-blur-xs rounded-3xl hidden absolute z-50 fixed"
+      id="subMenu"
+    ></section>
+    <!------------------------------------------ main ----------------------------->
     <main class="w-full 2xl:container mx-auto">
       <!------------------------------------ سامانه هوشمند پرنیان ---------------->
       <section
@@ -312,7 +325,7 @@
           </div>
         </div>
       </section>
-      <!-- third section -->
+      <!------------------------------------- third section -------------------------->
       <section
         class="w-[95%] mx-auto h-[500px] sm:h-[600px] mt-20 rounded-4xl rounded-b-4xl bg-[#0e0122] relative overflow-hidden"
       >
@@ -343,7 +356,7 @@
           <img class="w-[80%] h-[1500px]" src="images/blue.svg" alt="" />
         </figure>
       </section>
-      <!-- card sections -->
+      <!--------------------------------------- card sections --------------------->
       <section class="w-full py-52 overflow-hidden px-5">
         <!------------------------------ cards -------------------------------->
         <div class="min-w-max translate-x-1/2 flex gap-9 slideCards">
@@ -506,6 +519,7 @@
         </div>
       </section>
     </main>
+    <!---------------------------------------- footer ------------------------------>
     <footer
       class="w-full mx-auto flex flex-wrap justify-between lg:px-16 xl:px-32 2xl:container"
     >
@@ -571,7 +585,7 @@
       <div class="w-[95%] h-[0.5px] bg-gray-600 mt-20 mb-10 mx-auto"></div>
       <!-------------------------- under line --------------------------------->
       <section
-        class="mt-4 w-full px-3 sm:pr-10 pr-5 lg:flex items-center justify-between"
+        class="mb-8 mt-3 w-full px-3 sm:pr-10 pr-5 lg:flex items-center justify-between"
       >
         <!-- links social -->
         <ul class="flex gap-3 w-full lg:w-2/12">
@@ -633,7 +647,7 @@
         </ul>
         <!-- text links -->
         <ul
-          class="mt-5 *:mb-3 **:underline **:decoration-1 **:text-[12px] **:text-gray-300 hover:text-white md:flex items-center justify-center gap-8 lg:w-6/12 lg:mt-0 lg:*:mb-0"
+          class="mt-5 *:mb-3 **:underline **:decoration-1 **:text-[12px] **:text-gray-300 hover:text-white md:flex items-center lg:justify-center gap-8 lg:w-4/12 lg:mt-0 lg:*:mb-0"
         >
           <li>
             <a class="hover:text-white duration-500" href="">لورم ایپسوم</a>
@@ -646,7 +660,7 @@
           </li>
           <li><a class="hover:text-white duration-500" href="">لورم</a></li>
         </ul>
-        <p class="text-[10px] my-4 lg:w-3/12 lg:my-0">
+        <p class="text-[13px] my-4 lg:w-4/12 lg:my-0">
           © 2024 KI Company GmbH. All rights reserved
         </p>
       </section>
@@ -656,4 +670,5 @@
     type="module"
     src="https://unpkg.com/@splinetool/viewer@1.10.41/build/spline-viewer.js"
   ></script>
+  <script src="js/main.js"></script>
 </html>
