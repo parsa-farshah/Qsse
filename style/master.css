@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* npx @tailwindcss/cli -i ./src/style/master.css -o ./src/style/output.css --watch */
+
+body {
+  background-color: #0a0118;
+  /* #ffffff1a  border color */
+  /* bg img linear-gradient(#0e012200 65%,#47087180),radial-gradient(circle at 50% 0,#0e012200 64%,#470871) */
+  color: white;
+  font-family: iranSans;
+}
+
+@font-face {
+  font-family: iranSans;
+  src: url(../fonts/Iranian\ Sans.ttf);
+}
