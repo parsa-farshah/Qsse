@@ -32,3 +32,21 @@ body {
     transform: translateX(-50%);
   }
 }
+
+@layer utilities {
+  .slideCards {
+    animation: slideCards 10s linear infinite alternate;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes slideCards {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
