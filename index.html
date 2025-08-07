@@ -10,7 +10,7 @@
     <!-------------------------------------- header -------------------------->
     <header>
       <nav
-        class="fixed w-[90%] h-16 border border-[#2d223f] bg-gradient-to-r from-[#0e012200] via-[#4708715d] to-[#0e012200] backdrop-blur-xs rounded-full mx-auto px-5 py-1.5 top-8 left-[5%] right-[5%] flex justify-between items-center 2xl:container 2xl:right-0 2xl:left-0"
+        class="fixed w-[90%] h-16 border border-[#2d223f] bg-gradient-to-r from-[#0e012200] via-[#4708715d] to-[#0e012200] backdrop-blur-xs rounded-full mx-auto px-5 py-1.5 top-8 left-[5%] right-[5%] flex justify-between items-center 2xl:container 2xl:right-0 2xl:left-0 z-50"
       >
         <!-- sign up & sign in -->
         <div class="hidden lg:flex w-2/12 lg:h-full">
@@ -101,15 +101,15 @@
     </header>
 
     <!-------------------------------------- haeder ---------------------->
-    <main class="w-full h-[100vh]">
+    <main class="w-full h-[100vh] 2xl:container mx-auto">
       <!------------------------- سامانه هوشمند پرنیان ---------------->
       <section
-        class="w-full rounded-r-4xl rounded-b-4xl bg-gradient-to-b from-[#0e012200] from-65% to-[#47087180] bg-[radial-gradient(circle_at_50%_0,#0e012200_64%,#470871)] pt-32 md:pt-44 px-7 pb-20 flex justify-between"
+        class="w-full rounded-r-4xl rounded-b-4xl bg-gradient-to-b from-[#0e012200] from-65% to-[#47087180] bg-[radial-gradient(circle_at_50%_0,#0e012200_64%,#470871)] pt-32 md:pt-44 px-7 md:pb-5 pb-2 flex flex-col md:flex-row justify-between"
         id="aiParnian"
       >
         <!-- text-parnian Ai -->
         <div class="w-full md:w-[45%] md:pt-12">
-          <h1 class="text-4xl text-center pb-10 font-extrabold">
+          <h1 class="text-4xl text-center pb-10 font-extrabold sm:text-start">
             سامانه هوشمند پرنیان
           </h1>
           <p
@@ -130,20 +130,112 @@
             آن آشنا شوید.
           </p>
         </div>
+        <!-- Ai animation -->
         <div
-          class="hidden md:flex justify-center items-start md:w-[45%] h-full"
+          class="md:flex justify-center items-start md:w-[45%] h-full ml-14 md:ml-0"
         >
-          <section class="relative flex justify-end h-[500px] p-5">
+          <section class="relative flex justify-end w-full h-[500px]">
             <spline-viewer
               url="https://prod.spline.design/kqMGubvK6YDel6rI/scene.splinecode"
-              class="w-[400px] h-[400px] shrink-0 block"
+              class="w-full h-[400px] shrink-0 block relative z-0"
             ></spline-viewer>
             <div
-              class="absolute border border-[#2d223f] bg-gradient-to-r from-[#0e0122] via-[#470871] to-[#0e0122] backdrop-blur-xs right-[30px] bottom-[101px] w-[180px] h-[35px] rounded-full cursor-pointer z-10 flex items-center justify-center"
+              class="absolute border border-[#2d223f] bg-gradient-to-r from-[#0e0122] via-[#470871] to-[#0e0122] backdrop-blur-xs right-[10px] bottom-[122px] w-[180px] h-[35px] rounded-full cursor-pointer z-10 flex items-center justify-center"
             >
               <h4 class="text-center">مدرسه پرنیان</h4>
             </div>
           </section>
+        </div>
+      </section>
+      <!-- companies -->
+      <section
+        class="w-full pt-16 relative overflow-x-hidden flex flex-col items-center gap-4 sm:gap-10"
+        id="company"
+      >
+        <span class="block text-center text-xs md:text-lg mb-5"
+          >همچنین میتوانید نمونه کارکرد این محصول را در وبسایت های زیر مشاهده
+          کنید:</span
+        >
+        <div
+          class="*:h-full **:h-full h-28 flex items-center min-w-max slideToRight  py-8 md:py-6 sm:mt-"
+        >
+          <div
+            class="w-full flex gap-14 relative -translate-y-1/2 translate-x-[400px]"
+          >
+            <!-- images -->
+            <a href="">
+              <figure>
+                <img class="grayscale-100" src="images/khe.png" alt="" />
+              </figure>
+            </a>
+            <a href="">
+              <figure>
+                <img class="grayscale-100" src="images/par.png" alt="" />
+              </figure>
+            </a>
+            <a href="">
+              <figure>
+                <img
+                  class="grayscale-100"
+                  src="images/pardis.jpg"
+                  alt=""
+                /></figure
+            ></a>
+            <a href="">
+              <figure>
+                <img class="grayscale-100" src="images/khe.png" alt="" />
+              </figure>
+            </a>
+            <a href="">
+              <figure>
+                <img class="grayscale-100" src="images/par.png" alt="" />
+              </figure>
+            </a>
+            <a href="">
+              <figure>
+                <img
+                  class="grayscale-100"
+                  src="images/pardis.jpg"
+                  alt=""
+                /></figure
+            ></a>
+            <a href="">
+              <figure>
+                <img class="grayscale-100" src="images/khe.png" alt="" />
+              </figure>
+            </a>
+            <a href="">
+              <figure>
+                <img class="grayscale-100" src="images/par.png" alt="" />
+              </figure>
+            </a>
+            <a href="">
+              <figure>
+                <img
+                  class="grayscale-100"
+                  src="images/pardis.jpg"
+                  alt=""
+                /></figure
+            ></a>
+            <a href="">
+              <figure>
+                <img class="grayscale-100" src="images/khe.png" alt="" />
+              </figure>
+            </a>
+            <a href="">
+              <figure>
+                <img class="grayscale-100" src="images/par.png" alt="" />
+              </figure>
+            </a>
+            <a href="">
+              <figure>
+                <img
+                  class="grayscale-100"
+                  src="images/pardis.jpg"
+                  alt=""
+                /></figure
+            ></a>
+          </div>
         </div>
       </section>
     </main>

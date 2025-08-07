@@ -14,3 +14,21 @@ body {
   font-family: iranSans;
   src: url(../fonts/Iranian\ Sans.ttf);
 }
+
+@layer utilities {
+  .slideToRight {
+    animation: slideToRight 10s linear infinite alternate;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes slideToRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
