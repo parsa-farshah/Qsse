@@ -13,23 +13,21 @@
         class="fixed w-[90%] h-16 border border-[#2d223f] bg-gradient-to-r from-[#0e012200] via-[#4708715d] to-[#0e012200] backdrop-blur-xs rounded-full mx-auto px-5 py-1.5 top-8 left-[5%] right-[5%] flex justify-between items-center 2xl:container 2xl:right-0 2xl:left-0 z-50"
       >
         <!-- sign up & sign in -->
-        <div class="hidden lg:flex w-2/12 lg:h-full">
+        <div class="hidden lg:flex w-2/12 lg:h-full lg:gap-2">
           <ul
-            class="w-full flex justify-center items-center *:text-white *:w-1/2"
+            class="w-full flex justify-center items-center text-white gap-2 after:content-[] after:w-0.5 after:h-[60%] after:bg-purple-600 after:absolute"
           >
-            <li
-              class="group relative after:w-0.5 after:h-[100%] after:bg-amber-50 after:content-[] after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[100%]"
-            >
+            <li class="w-1/2 flex relative">
               <a
-                class="w-full h-[70%] flex justify-center items-center group-hover:text-gray-400 duration-500 group-hover:before:bg-gray-400"
+                class="w-full text-sm h-[70%] text-center py-2 rounded-xl border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white transition-all duration-300"
                 href="#"
                 >ورود</a
               >
             </li>
 
-            <li class="group">
+            <li class="w-1/2 flex relative">
               <a
-                class="w-full h-full flex justify-center items-center group-hover:text-gray-400 duration-500 group-hover:before:bg-gray-400"
+                class="w-full text-sm text-center py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
                 href="#"
                 >عضویت</a
               >
@@ -63,7 +61,7 @@
           <!-- صفحه اصلی -->
           <li class="group">
             <a
-              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:text-gray-400 group-hover:before:bg-gray-400 before:duration-500 duration-500"
+              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:before:bg-purple-400 group-hover:scale-102 group-hover:transition-all group-hover:duration-300 group-hover:before:duration-300 group-hover:text-purple-400"
               href=""
               >صفحه اصلی</a
             >
@@ -71,7 +69,7 @@
           <!-- دموی AI -->
           <li class="group">
             <a
-              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:text-gray-400 group-hover:before:bg-gray-400 before:duration-500 duration-500"
+              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:before:bg-purple-400 group-hover:scale-102 group-hover:transition-all group-hover:duration-300 group-hover:before:duration-300 group-hover:text-purple-400"
               href=""
               >دموی AI</a
             >
@@ -79,7 +77,7 @@
           <!-- لیست قیمت -->
           <li class="group">
             <a
-              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:text-gray-400 group-hover:before:bg-gray-400 before:duration-500 duration-500"
+              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:before:bg-purple-400 group-hover:scale-102 group-hover:transition-all group-hover:duration-300 group-hover:before:duration-300 group-hover:text-purple-400"
               href=""
               >لیست قیمت</a
             >
@@ -87,7 +85,7 @@
           <!-- تماس با ما -->
           <li class="group">
             <a
-              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:text-gray-400 group-hover:before:bg-gray-400 before:duration-500 duration-500"
+              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:before:bg-purple-400 group-hover:scale-102 group-hover:transition-all group-hover:duration-300 group-hover:before:duration-300 group-hover:text-purple-400"
               href=""
               >تماس با ما</a
             >
@@ -109,9 +107,62 @@
     </header>
     <!--------------------------------------- menu bar sub menu ------------------->
     <section
-      class="w-[90%] h-[100vh] right-1/2 top-24 translate-x-1/2 mx-auto border border-[#2d223f] bg-gradient-to-r from-[#0e012200] via-[#4708715d] to-[#0e012200] backdrop-blur-xs rounded-3xl hidden absolute z-50 fixed"
+      class="w-[90%] right-1/2 top-24 translate-x-1/2 mx-auto border border-[#2d223f] bg-gradient-to-r from-[#0e012200] via-[#4708715d] to-[#0e012200] backdrop-blur-md rounded-3xl hidden fixed z-50 flex flex-col items-start justify-start gap-4 px-6 py-8 text-white"
       id="subMenu"
-    ></section>
+    >
+      <!-- لینک‌های منو -->
+      <div class="flex flex-col gap-6 mb-10">
+        <a
+          href="#home"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          خانه
+        </a>
+        <a
+          href="#about"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          درباره ما
+        </a>
+        <a
+          href="#services"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          خدمات
+        </a>
+        <a
+          href="#portfolio"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          نمونه کارها
+        </a>
+        <a
+          href="#contact"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          تماس با ما
+        </a>
+      </div>
+
+      <!-- بخش ورود / عضویت -->
+      <div
+        class="mt-auto w-full flex flex-col gap-3 pt-6 border-t border-white/20 pt-10"
+      >
+        <a
+          href="#login"
+          class="w-full text-center py-2 rounded-xl border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white transition-all duration-300"
+        >
+          ورود
+        </a>
+        <a
+          href="#signup"
+          class="w-full text-center py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
+        >
+          عضویت
+        </a>
+      </div>
+    </section>
+
     <!------------------------------------------ main ----------------------------->
     <main class="w-full 2xl:container mx-auto">
       <!------------------------------------ سامانه هوشمند پرنیان ---------------->
