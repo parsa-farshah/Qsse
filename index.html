@@ -101,23 +101,28 @@
     </header>
 
     <!-------------------------------------- haeder ---------------------->
-    <main class="w-full h-[100vh] border border-amber-700">
+    <main class="w-full h-[100vh]">
       <!------------------------- سامانه هوشمند پرنیان ---------------->
       <section
-        class="w-full rounded-r-4xl rounded-b-4xl bg-gradient-to-b from-[#0e012200] from-65% to-[#47087180] bg-[radial-gradient(circle_at_50%_0,#0e012200_64%,#470871)] pt-32 pr-7 pl-14 pb-20 flex"
+        class="w-full rounded-r-4xl rounded-b-4xl bg-gradient-to-b from-[#0e012200] from-65% to-[#47087180] bg-[radial-gradient(circle_at_50%_0,#0e012200_64%,#470871)] pt-32 md:pt-44 px-7 pb-20 flex justify-between"
         id="aiParnian"
       >
-        <div class="w-full sm:w-5/6 md:w-3/6">
-          <h1 class="text-4xl pb-10 font-extrabold">سامانه هوشمند پرنیان</h1>
+        <!-- text-parnian Ai -->
+        <div class="w-full md:w-[45%] md:pt-12">
+          <h1 class="text-4xl text-center pb-10 font-extrabold">
+            سامانه هوشمند پرنیان
+          </h1>
           <p
-            class="text-sm text-gray-300 leading-6 text-justify sm:sm:text-start mb-3"
+            class="text-sm text-gray-300 leading-6 w-full text-center mb-6 sm:pl-16 sm:text-start md:pl-4 lg:pl-0 md:text-justify"
           >
             اگر چنانچه شما هم مایلید برای سایت، گروه یا کانال تلگرامی،
             اینستاگرامی و... و یا حتی شرکت و موسسه خود، یک دستیار هوش مصنوعی
             حرفه ای و قوی داشته باشید که بتواند هر لحظه از شبانه روز پاسخ گوی
             سوالات مشتریان، کارمندان و ... شما باشد، دستیار هوش
           </p>
-          <p class="text-sm text-gray-300 leading-6 text-justify sm:text-start">
+          <p
+            class="text-sm text-gray-300 text-center leading-6 sm:text-start sm:pl-16 md:pl-4 lg:ml-0 md:text-justify"
+          >
             این سیستم هوشمند طوری طراحی شده است که هر کسی با هر نوع کسب و کاری
             میتواند یک دستیار هوش مصنوعی بسیار قدرتمند و قوی در کنار خود داشته
             باشد و به سادگی آن را برای خود شخصی سازی کند. همین الان با کلیک روی
@@ -125,17 +130,19 @@
             آن آشنا شوید.
           </p>
         </div>
-        <div class="hidden md:flex md:w-3/6 h-full">
+        <div
+          class="hidden md:flex justify-center items-start md:w-[45%] h-full"
+        >
           <section class="relative flex justify-end h-[500px] p-5">
             <spline-viewer
               url="https://prod.spline.design/kqMGubvK6YDel6rI/scene.splinecode"
               class="w-[400px] h-[400px] shrink-0 block"
             ></spline-viewer>
-
-            <!-- div پوشاننده لوگو بدون اینکه دیده شود -->
             <div
-              class="absolute right-0 bottom-[150px] w-[100px] h-[30px] pointer-events-none z-10"
-            ></div>
+              class="absolute border border-[#2d223f] bg-gradient-to-r from-[#0e0122] via-[#470871] to-[#0e0122] backdrop-blur-xs right-[30px] bottom-[101px] w-[180px] h-[35px] rounded-full cursor-pointer z-10 flex items-center justify-center"
+            >
+              <h4 class="text-center">مدرسه پرنیان</h4>
+            </div>
           </section>
         </div>
       </section>
