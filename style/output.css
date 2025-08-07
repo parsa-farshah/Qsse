@@ -187,6 +187,9 @@
   .relative {
     position: relative;
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .top-8 {
     top: calc(var(--spacing) * 8);
   }
@@ -196,20 +199,47 @@
   .-right-\[100px\] {
     right: calc(100px * -1);
   }
+  .right-\[-10\%\] {
+    right: -10%;
+  }
+  .right-\[-20px\] {
+    right: -20px;
+  }
+  .right-\[-30px\] {
+    right: -30px;
+  }
   .right-\[5\%\] {
     right: 5%;
+  }
+  .right-\[5px\] {
+    right: 5px;
   }
   .right-\[10px\] {
     right: 10px;
   }
+  .right-\[px\] {
+    right: px;
+  }
   .bottom-\[-50\%\] {
     bottom: -50%;
+  }
+  .bottom-\[12px\] {
+    bottom: 12px;
+  }
+  .bottom-\[118px\] {
+    bottom: 118px;
   }
   .bottom-\[120px\] {
     bottom: 120px;
   }
+  .bottom-\[121px\] {
+    bottom: 121px;
+  }
   .-left-96 {
     left: calc(var(--spacing) * -96);
+  }
+  .left-\[-10\%\] {
+    left: -10%;
   }
   .left-\[5\%\] {
     left: 5%;
@@ -234,6 +264,9 @@
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+  .ml-9 {
+    margin-left: calc(var(--spacing) * 9);
   }
   .ml-14 {
     margin-left: calc(var(--spacing) * 14);
@@ -264,6 +297,9 @@
   }
   .h-\[35px\] {
     height: 35px;
+  }
+  .h-\[40px\] {
+    height: 40px;
   }
   .h-\[70\%\] {
     height: 70%;
@@ -318,6 +354,9 @@
   }
   .w-\[90\%\] {
     width: 90%;
+  }
+  .w-\[120\%\] {
+    width: 120%;
   }
   .w-\[130px\] {
     width: 130px;
@@ -390,6 +429,9 @@
   }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .overflow-visible {
+    overflow: visible;
   }
   .overflow-x-hidden {
     overflow-x: hidden;
@@ -492,11 +534,17 @@
   .pt-32 {
     padding-top: calc(var(--spacing) * 32);
   }
+  .pr-6 {
+    padding-right: calc(var(--spacing) * 6);
+  }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pl-7 {
+    padding-left: calc(var(--spacing) * 7);
   }
   .text-center {
     text-align: center;
