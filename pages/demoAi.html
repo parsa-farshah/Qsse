@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Ai</title>
+    <link rel="stylesheet" href="../style/output.css" />
+  </head>
+  <body>
+    <!-------------------------------------- header -------------------------->
+    <header>
+      <nav
+        class="fixed w-[90%] h-16 border border-[#2d223f] bg-gradient-to-r from-[#0e012200] via-[#4708715d] to-[#0e012200] backdrop-blur-xs rounded-full mx-auto px-5 py-1.5 top-8 left-[5%] right-[5%] flex justify-between items-center 2xl:container 2xl:right-0 2xl:left-0 z-50"
+      >
+        <!-- sign up & sign in -->
+        <div class="hidden lg:flex w-2/12 lg:h-full lg:gap-2">
+          <ul
+            class="w-full flex justify-center items-center text-white gap-2 after:content-[] after:w-0.5 after:h-[60%] after:bg-purple-600 after:absolute"
+          >
+            <li class="w-1/2 flex relative">
+              <a
+                class="w-full text-sm h-[70%] text-center py-2 rounded-xl border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white transition-all duration-300"
+                href="#"
+                >ورود</a
+              >
+            </li>
+
+            <li class="w-1/2 flex relative">
+              <a
+                class="w-full text-sm text-center py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
+                href="#"
+                >عضویت</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--------------------------------------- menu bar ---------------->
+        <div class="w-1/2 h-full lg:hidden" id="menuBar">
+          <div
+            class="relative w-12 h-12 flex flex-col items-center justify-center cursor-pointer group"
+            id="menuIcon"
+          >
+            <span
+              id="firstLine"
+              class="absolute w-6 h-0.5 bg-white transition-all duration-300 ease-in-out translate-y-[-8px]"
+            ></span>
+            <span
+              id="middleLine"
+              class="absolute w-6 h-0.5 bg-white transition-all duration-300 ease-in-out"
+            ></span>
+            <span
+              id="lastLine"
+              class="absolute w-6 h-0.5 bg-white transition-all duration-300 ease-in-out translate-y-[8px]"
+            ></span>
+          </div>
+        </div>
+        <!---------------------- links ------------------------------------------->
+        <ul
+          class="lg:w-8/12 hidden lg:flex lg:justify-center *:text-white **:flex **:justify-between **:items-center"
+        >
+          <!-- صفحه اصلی -->
+          <li class="group">
+            <a
+              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:before:bg-purple-400 group-hover:scale-102 group-hover:transition-all group-hover:duration-300 group-hover:before:duration-300 group-hover:text-purple-400"
+              href="index.html"
+              >صفحه اصلی</a
+            >
+          </li>
+          <!-- دموی AI -->
+          <li class="group">
+            <a
+              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:before:bg-purple-400 group-hover:scale-102 group-hover:transition-all group-hover:duration-300 group-hover:before:duration-300 group-hover:text-purple-400"
+              href=""
+              >دموی AI</a
+            >
+          </li>
+          <!-- لیست قیمت -->
+          <li class="group">
+            <a
+              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:before:bg-purple-400 group-hover:scale-102 group-hover:transition-all group-hover:duration-300 group-hover:before:duration-300 group-hover:text-purple-400"
+              href=""
+              >لیست قیمت</a
+            >
+          </li>
+          <!-- تماس با ما -->
+          <li class="group">
+            <a
+              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:before:bg-purple-400 group-hover:scale-102 group-hover:transition-all group-hover:duration-300 group-hover:before:duration-300 group-hover:text-purple-400"
+              href=""
+              >تماس با ما</a
+            >
+          </li>
+        </ul>
+        <!-------------------------------- logo -------------------------->
+        <div class="w-1/2 h-full flex justify-end lg:w-2/12">
+          <figure class="h-full w-[130px]">
+            <a href="/" class="h-full w-full block">
+              <img
+                class="w-full h-full object-contain"
+                src="../images/logo.png"
+                alt="سامانه هوشمند پرنیان"
+              />
+            </a>
+          </figure>
+        </div>
+      </nav>
+    </header>
+    <!--------------------------------------- menu bar sub menu ------------------->
+    <section
+      class="w-[90%] right-1/2 top-24 translate-x-1/2 mx-auto border border-[#2d223f] bg-gradient-to-r from-[#0e012200] via-[#4708715d] to-[#0e012200] backdrop-blur-md rounded-3xl hidden fixed z-50 flex flex-col items-start justify-start gap-4 px-6 py-8 text-white animate-slide-down"
+      id="subMenu"
+    >
+      <!-- لینک‌های منو -->
+      <div class="flex flex-col gap-6 mb-10">
+        <a
+          href="index.html"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          خانه
+        </a>
+        <a
+          href="#about"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          درباره ما
+        </a>
+        <a
+          href="#services"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          خدمات
+        </a>
+        <a
+          href="#portfolio"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          نمونه کارها
+        </a>
+        <a
+          href="#contact"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          تماس با ما
+        </a>
+      </div>
+
+      <!-- بخش ورود / عضویت -->
+      <div
+        class="mt-auto w-full flex flex-col gap-3 pt-6 border-t border-white/20 pt-10"
+      >
+        <a
+          href="#login"
+          class="w-full text-center py-2 rounded-xl border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white transition-all duration-300"
+        >
+          ورود
+        </a>
+        <a
+          href="#signup"
+          class="w-full text-center py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
+        >
+          عضویت
+        </a>
+      </div>
+    </section>
+    <!--------------------------------------- main ---------------------------------->
+    <main class="w-full h-full 2xl:container mx-auto px-5">
+      <!------------------------------- چت بات توی صفحه جدا ------------------->
+      <section
+        class="w-full px-[5%] lg:px-[2%] mx-auto pt-36 relative rounded-4xl overflow-hidden pb-28 lg:flex lg:items-center lg:justify-between"
+      >
+        <!-- bg purple -->
+        <figure class="absolute top-[-15%] left-[-80%] z-0 pointer-events-none">
+          <img class="w-[100%] h-[1500px]" src="../images/purple.svg" alt="" />
+        </figure>
+        <!-- bg blue -->
+        <figure
+          class="absolute top-[-50%] -right-[50%] z-0 pointer-events-none"
+        >
+          <img class="w-[80%] h-[1500px]" src="../images/blue.svg" alt="" />
+        </figure>
+        <!----------------------------------------- text ------------------------>
+        <div class="px-6 md:pl-52 lg:pl-0 lg:w-[45%] relative z-40">
+          <h2
+            class="text-center text-2xl text-purple-400 font-extrabold md:text-start"
+          >
+            چت بات حرفه ای صفحه جدا
+          </h2>
+          <p
+            class="mt-10 text-center leading-6 text-sm text-gray-300 md:text-start"
+          >
+            همانطور که در تصویر مشاهده میفرمایید، این چت بات همانند تمام AI های
+            تجاری، یک صفحه کاملا مستقل برای خود دارد و از قسمت پایین صفحه کاربر
+            میتواند شروع به صحبت (چت) با هوش مصنوعی کند.
+          </p>
+          <p
+            class="mt-5 text-center leading-6 text-sm text-gray-300 md:text-start"
+          >
+            لازم به ذکر است این نسخه برای تمام کاربران، حتی کسانیکه صاحب سایت و
+            نیستند نیز قابل استفاده است. تمام ویژگی های این چت بات عبارتند از:
+          </p>
+          <ul class="text-sm text-gray-300 my-8 *:mb-2 mx-3">
+            <li>-دارای دو موتور قدرتمند اختصاصی Q-SamSmart-e</li>
+            <li>-امکان چت بصورت نوشتاری</li>
+            <li>-امکان چت بصورت گفتاری (خاص)</li>
+            <li>-سابقه گفتگو های گذشته تمام کاربران در ستون سمت راست</li>
+            <li>-مشاهده پاسخ چت های گذشته با کلیک روی آن</li>
+            <li>-امکان پرسش و پاسخ به زبان فارسی و انگلیسی</li>
+            <li>-نمایش نفرات آنلاین و کل سوالات</li>
+            <li>-امکان ادامه چت در گفتگو</li>
+            <li>-دیتابیس اختصاصی برای شما</li>
+          </ul>
+          <p
+            class="mt-5 text-center leading-6 text-sm text-gray-300 mb-3 md:text-start"
+          >
+            میتوانید برای مشاهده کامل امکانات دستیار هوش مصنوعی قدرتمند پرنیان،
+            روی لینک مقابل کلیک کرده و از نزدیک امکانات آن را تست کنید.
+          </p>
+        </div>
+        <!------------------------------------------- image live chatbot -------->
+        <section
+          class="w-[95%] md:w-[70%] mx-auto sm:h-[600px] border border-[#bf0feb5d] rounded-2xl mt-20 bg-[#0e0122] relative z-40 overflow-hidden lg:w-[45%]"
+        >
+          <!-- bg purple -->
+          <figure class="absolute bottom-[-50%] -left-96 z-0">
+            <img class="w-[80%] h-[1500px]" src="../images/purple.svg" alt="" />
+          </figure>
+          <!-- bg blue -->
+          <figure
+            class="absolute top-[-50%] -right-[100px] z-0 pointer-events-none"
+          >
+            <img class="w-[80%] h-[1500px]" src="../images/blue.svg" alt="" />
+          </figure>
+          <!-- image -->
+          <div class="w-full h-[90%] relative z-40">
+            <figure class="w-[90%] mx-auto py-20">
+              <img
+                class="w-full h-full object-contain rounded-2xl"
+                src="../images/chatBox.webp"
+                alt=""
+              />
+            </figure>
+          </div>
+          <!-- text link -->
+          <div class="w-full h-[10%] relative z-40">
+            <div class="flex h-full">
+              <a
+                class="w-full h-full flex justify-center items-center py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
+                href="https://chat.trainingsitedesign.ir/"
+                >ورود به چت بات صفحه جدا</a
+              >
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-------------------------------- border --------------------------------->
+      <div class="w-[90%] bg-gray-400 h-0.5 mx-auto my-10"></div>
+      <!------------------------------- چت بات حرفه ای شناور ------------------->
+      <section
+        class="w-full px-[5%] lg:px-[2%] mx-auto pt-36 relative rounded-3xl overflow-hidden pb-28 lg:flex lg:items-center lg:justify-between"
+      >
+        <!-- bg purple -->
+        <figure class="absolute top-[-15%] left-[-80%] z-0 pointer-events-none">
+          <img class="w-[100%] h-[1500px]" src="../images/purple.svg" alt="" />
+        </figure>
+        <!-- bg blue -->
+        <figure
+          class="absolute top-[-50%] -right-[50%] z-0 pointer-events-none"
+        >
+          <img class="w-[80%] h-[1500px]" src="../images/blue.svg" alt="" />
+        </figure>
+        <!----------------------------------------- text ------------------------>
+        <div class="px-6 md:pl-52 lg:pl-0 lg:w-[45%] relative z-40">
+          <h2
+            class="text-center text-2xl text-purple-400 font-extrabold md:text-start"
+          >
+            چت بات حرفه ای صفحه جدا
+          </h2>
+          <p
+            class="mt-10 text-center leading-6 text-sm text-gray-300 md:text-start"
+          >
+            همانطور که در تصویر مشاهده میفرمایید، این چت بات بصورت فیکس در تمام
+            صفحات وبسایت ثابت و موجود است و کاربر میتواند در هر لحظه که اراده
+            کند، با دستیار هوش مصنوعی سایت وارد مکالمه شود.
+          </p>
+          <p
+            class="mt-5 text-center leading-6 text-sm text-gray-300 md:text-start"
+          >
+            قاعدتا نیاز به توضیح نیست که این نسخه حتما نیاز به داشتن سایت دارد!
+            از ویژگی های این نسخه میتواند به موارد زیر اشاره کرد:
+          </p>
+          <ul class="text-sm text-gray-300 my-8 *:mb-2 mx-3">
+            <li>دارای دو موتور قدرتمند اختصاصی Q-SamSmart-e</li>
+            <li>امکان چت بصورت نوشتاری</li>
+            <li>حضور در تمام صفحات سایت</li>
+            <li>دارای دو طرح زیبا</li>
+            <li>دارای حافظه داخلی و نگه داری چت های کاربران</li>
+            <li>امکان ادامه دادن چت ها</li>
+            <li>امکان پاسخ سریع، درسوالات مشابه</li>
+            <li>دارای دیتابیس اختصاصی</li>
+          </ul>
+
+          <p
+            class="mt-5 text-center leading-6 text-sm text-gray-300 mb-3 md:text-start"
+          >
+            میتوانید برای مشاهده کامل امکانات دستیار هوش مصنوعی قدرتمند پرنیان،
+            روی لینک مقابل کلیک کرده و از نزدیک امکانات آن را تست کنید.
+          </p>
+        </div>
+        <!------------------------------------------- image live chatbot -------->
+        <section
+          class="w-[95%] md:w-[70%] lg:w-[45%] mx-auto sm:h-[600px] border border-purple-600 rounded-2xl mt-20 bg-[#0e0122] relative z-40 overflow-hidden"
+        >
+          <!-- bg purple -->
+          <figure
+            class="absolute bottom-[-50%] -left-96 z-0 pointer-events-none"
+          >
+            <img class="w-[80%] h-[1500px]" src="../images/purple.svg" alt="" />
+          </figure>
+          <!-- bg blue -->
+          <figure
+            class="absolute top-[-50%] -right-[100px] z-0 pointer-events-none"
+          >
+            <img class="w-[80%] h-[1500px]" src="../images/blue.svg" alt="" />
+          </figure>
+          <!-- image -->
+          <div class="w-full h-[90%] relative z-40">
+            <figure class="w-[90%] mx-auto py-20">
+              <img
+                class="w-full h-full object-contain rounded-2xl"
+                src="../images/floting-chat.webp"
+                alt=""
+              />
+            </figure>
+          </div>
+          <!-- text link -->
+          <div class="w-full h-[10%] relative z-40">
+            <div class="flex h-full">
+              <a
+                class="w-full h-full flex justify-center items-center py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
+                href="https://trainingsitedesign.ir/"
+                >ورود به چت بات شناور</a
+              >
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!---------------------------------------- footer ------------------------------>
+    <footer
+      class="w-full mx-auto flex flex-wrap justify-between lg:px-16 xl:px-32 2xl:container"
+    >
+      <!-------------------------- logo -------------------------->
+      <figure class="w-full flex justify-center lg:w-2/12 lg:pt-10">
+        <img
+          class="w-[200px] h-[84px] lg:h-[60px] xl:h-[80px] object-contain"
+          src="images/logo.png"
+          alt=""
+        />
+      </figure>
+      <!------------------------- sevices -------------------->
+      <div class="mt-10 sm:pr-10 pr-5 lg:pr-0 w-full sm:w-1/3 lg:w-2/12">
+        <h5 class="font-black text-2xl mb-4">سرویس ها</h5>
+        <ul
+          class="*:mb-3 *:text-gray-200 **:text-sm *:hover:text-gray-400 *:duration-500"
+        >
+          <li><a href="">فروشگاه هوش مصنوعی</a></li>
+          <li><a href="">پشتیبانی هوش مصنوعی</a></li>
+          <li><a href="">خودکارسازی</a></li>
+          <li><a href="">خودکارسازی پرنیان</a></li>
+          <li><a href="">تحلیل پتانسیل هوش مصنوعی</a></li>
+        </ul>
+      </div>
+      <!------------------------- parnian school -------------------->
+      <div class="mt-10 pr-5 w-full sm:w-1/3 lg:w-2/12">
+        <h5 class="font-black text-2xl mb-4">مدرسه پرنیان</h5>
+        <ul
+          class="*:mb-3 *:text-gray-200 **:text-sm *:hover:text-gray-400 *:duration-500"
+        >
+          <li><a href="">درباره پرنیان</a></li>
+          <li><a href="">پادکست پرنیان</a></li>
+          <li><a href="">شناسنامه سایت</a></li>
+          <li><a href="">فرصت‌های شغلی</a></li>
+          <li><a href="">تماس با ما</a></li>
+        </ul>
+      </div>
+      <!------------------------- Ai -------------------->
+      <div class="mt-10 pr-5 w-full sm:w-1/3 lg:w-2/12">
+        <h5 class="font-black text-2xl mb-4">هوش مصنوعی</h5>
+        <ul
+          class="*:mb-3 *:text-gray-200 **:text-sm *:hover:text-gray-400 *:duration-500"
+        >
+          <li><a href="">موارد استفاده</a></li>
+          <li><a href="">وبلاگ</a></li>
+          <li><a href="">داستان‌های موفقیت</a></li>
+          <li><a href="">حمایت مالی هوش مصنوعی</a></li>
+        </ul>
+      </div>
+      <!------------------------- price -------------------->
+      <div class="mt-10 sm:pr-10 pr-5 lg:pr-0 w-full sm:w-1/3 lg:w-2/12">
+        <h5 class="font-black text-2xl mb-4">قیمت‌گذاری</h5>
+        <ul
+          class="*:mb-3 *:text-gray-200 **:text-sm *:hover:text-gray-400 *:duration-500"
+        >
+          <li><a href="">کارگاه‌های هوش مصنوعی</a></li>
+          <li><a href="">وبلاگ</a></li>
+          <li><a href="">مشاوره هوش مصنوعی</a></li>
+          <li><a href="">خودکارسازی</a></li>
+        </ul>
+      </div>
+      <!-- line -->
+      <div class="w-[95%] h-[0.5px] bg-gray-600 mt-20 mb-10 mx-auto"></div>
+      <!-------------------------- under line --------------------------------->
+      <section
+        class="mb-8 mt-3 w-full px-3 sm:pr-10 pr-5 lg:flex items-center justify-between"
+      >
+        <!-- links social -->
+        <ul class="flex gap-3 w-full lg:w-2/12">
+          <li>
+            <a href="">
+              <figure>
+                <img
+                  class="w-4 h-4"
+                  src="images/facebook-svgrepo-com.svg"
+                  alt=""
+                />
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <figure>
+                <img
+                  class="w-4 h-4"
+                  src="images/instagram-svgrepo-com.svg"
+                  alt=""
+                />
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <figure>
+                <img
+                  class="w-4 h-4"
+                  src="images/linkedin-svgrepo-com (1).svg"
+                  alt=""
+                />
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <figure>
+                <img
+                  class="w-4 h-4"
+                  src="images/spotify-color-svgrepo-com.svg"
+                  alt=""
+                />
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <figure>
+                <img
+                  class="w-4 h-4"
+                  src="images/youtube-168-svgrepo-com.svg"
+                  alt=""
+                />
+              </figure>
+            </a>
+          </li>
+        </ul>
+        <!-- text links -->
+        <ul
+          class="mt-5 *:mb-3 **:underline **:decoration-1 **:text-[12px] **:text-gray-300 hover:text-white md:flex items-center lg:justify-center gap-8 lg:w-4/12 lg:mt-0 lg:*:mb-0"
+        >
+          <li>
+            <a class="hover:text-white duration-500" href="">لورم ایپسوم</a>
+          </li>
+          <li>
+            <a class="hover:text-white duration-500" href="">لورم ایپسوم</a>
+          </li>
+          <li>
+            <a class="hover:text-white duration-500" href="">لورم ایپسوم</a>
+          </li>
+          <li><a class="hover:text-white duration-500" href="">لورم</a></li>
+        </ul>
+        <p class="text-[13px] my-4 lg:w-4/12 lg:my-0">
+          © 2024 KI Company GmbH. All rights reserved
+        </p>
+      </section>
+    </footer>
+  </body>
+  <script src="../js/main.js"></script>
+</html>
