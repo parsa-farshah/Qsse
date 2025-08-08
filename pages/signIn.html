@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo Ai</title>
+    <title>Sign In</title>
     <link rel="stylesheet" href="../style/output.css" />
   </head>
   <body>
@@ -78,7 +78,7 @@
           <li class="group">
             <a
               class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:before:bg-purple-400 group-hover:scale-102 group-hover:transition-all group-hover:duration-300 group-hover:before:duration-300 group-hover:text-purple-400"
-              href="price.html"
+              href=""
               >لیست قیمت</a
             >
           </li>
@@ -119,7 +119,7 @@
           خانه
         </a>
         <a
-          href="pages/demoAi.html"
+          href="demoAi.html"
           class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
         >
           دموی AI
@@ -131,7 +131,7 @@
           لیست قیمت
         </a>
         <a
-          href="#contact"
+          href="contactUs.html"
           class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
         >
           تماس با ما
@@ -157,188 +157,79 @@
       </div>
     </section>
     <!--------------------------------------- main ---------------------------------->
-    <main class="w-full h-full 2xl:container mx-auto px-5">
+    <main class="w-full pb-10 2xl:container mx-auto px-5">
       <!------------------------------- چت بات توی صفحه جدا ------------------->
       <section
-        class="w-full px-[5%] lg:px-[2%] mx-auto pt-36 relative rounded-4xl overflow-hidden pb-28 lg:flex lg:items-center lg:justify-between"
+        class="w-full px-[5%] lg:px-[2%] mx-auto pt-36 pb-24 relative rounded-4xl overflow-hidden"
       >
-        <!-- bg purple -->
-        <figure class="absolute top-[-15%] left-[-80%] z-0 pointer-events-none">
-          <img class="w-[100%] h-[1500px]" src="../images/purple.svg" alt="" />
+        <!---------------------- bg purple-------- -->
+        <figure class="absolute top-0 right-[-50%] z-10 pointer-events-none">
+          <img class="w-full h-auto" src="../images/purple.svg" alt="" />
         </figure>
-        <!-- bg blue -->
-        <figure
-          class="absolute top-[-50%] -right-[50%] z-0 pointer-events-none"
-        >
-          <img class="w-[80%] h-[1500px]" src="../images/blue.svg" alt="" />
+        <!----------------------- bg blue --------------->
+        <figure class="absolute top-[70%] left-[-50%] z-10 pointer-events-none">
+          <img class="w-full h-auto" src="../images/blue.svg" alt="" />
         </figure>
-        <!----------------------------------------- text ------------------------>
-        <div class="px-6 md:pl-52 lg:pl-0 lg:w-[45%] relative z-40">
-          <h2
-            class="text-center text-2xl text-purple-400 font-extrabold md:text-start md:text-3xl xl:text-4xl"
+        <!--------------- text ---------------->
+        <div>
+          <h5
+            class="text-center text-2xl text-purple-400 font-extrabold md:text-3xl xl:text-4xl mb-10"
           >
-            چت بات حرفه ای صفحه جدا
-          </h2>
-          <p
-            class="mt-10 text-center leading-6 text-sm text-gray-300 md:text-start"
-          >
-            همانطور که در تصویر مشاهده میفرمایید، این چت بات همانند تمام AI های
-            تجاری، یک صفحه کاملا مستقل برای خود دارد و از قسمت پایین صفحه کاربر
-            میتواند شروع به صحبت (چت) با هوش مصنوعی کند.
-          </p>
-          <p
-            class="mt-5 text-center leading-6 text-sm text-gray-300 md:text-start"
-          >
-            لازم به ذکر است این نسخه برای تمام کاربران، حتی کسانیکه صاحب سایت و
-            نیستند نیز قابل استفاده است. تمام ویژگی های این چت بات عبارتند از:
-          </p>
-          <ul class="text-sm text-gray-300 my-8 *:mb-2 mx-3">
-            <li>-دارای دو موتور قدرتمند اختصاصی Q-SamSmart-e</li>
-            <li>-امکان چت بصورت نوشتاری</li>
-            <li>-امکان چت بصورت گفتاری (خاص)</li>
-            <li>-سابقه گفتگو های گذشته تمام کاربران در ستون سمت راست</li>
-            <li>-مشاهده پاسخ چت های گذشته با کلیک روی آن</li>
-            <li>-امکان پرسش و پاسخ به زبان فارسی و انگلیسی</li>
-            <li>-نمایش نفرات آنلاین و کل سوالات</li>
-            <li>-امکان ادامه چت در گفتگو</li>
-            <li>-دیتابیس اختصاصی برای شما</li>
-          </ul>
-          <p
-            class="mt-5 text-center leading-6 text-sm text-gray-300 mb-3 md:text-start"
-          >
-            میتوانید برای مشاهده کامل امکانات دستیار هوش مصنوعی قدرتمند پرنیان،
-            روی لینک مقابل کلیک کرده و از نزدیک امکانات آن را تست کنید.
-          </p>
-        </div>
-        <!------------------------------------------- image live chatbot -------->
-        <section
-          class="w-[95%] md:w-[70%] mx-auto sm:h-[600px] border border-[#bf0feb5d] rounded-2xl mt-20 bg-[#0e0122] relative z-40 overflow-hidden lg:w-[45%]"
-        >
-          <!-- bg purple -->
-          <figure class="absolute bottom-[-50%] -left-96 z-0">
-            <img class="w-[80%] h-[1500px]" src="../images/purple.svg" alt="" />
-          </figure>
-          <!-- bg blue -->
-          <figure
-            class="absolute top-[-50%] -right-[100px] z-0 pointer-events-none"
-          >
-            <img class="w-[80%] h-[1500px]" src="../images/blue.svg" alt="" />
-          </figure>
-          <!-- image -->
-          <div class="w-full h-[90%] relative z-40">
-            <figure class="w-[90%] mx-auto py-20">
-              <img
-                class="w-full h-full object-contain rounded-2xl"
-                src="../images/chatBox.webp"
-                alt=""
-              />
-            </figure>
-          </div>
-          <!-- text link -->
-          <div class="w-full h-[10%] relative z-40">
-            <div class="flex h-full">
-              <a
-                class="w-full h-full flex justify-center items-center py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
-                href="https://chat.trainingsitedesign.ir/"
-                target="_blank"
-                >ورود به چت بات صفحه جدا</a
-              >
-            </div>
-          </div>
-        </section>
-      </section>
-      <!-------------------------------- border --------------------------------->
-      <div class="w-[90%] bg-gray-400 h-0.5 mx-auto my-10"></div>
-      <!------------------------------- چت بات حرفه ای شناور ------------------->
-      <section
-        class="w-full px-[5%] lg:px-[2%] mx-auto pt-36 relative rounded-3xl overflow-hidden pb-28 lg:flex lg:items-center lg:justify-between"
-      >
-        <!-- bg purple -->
-        <figure class="absolute top-[-15%] left-[-80%] z-0 pointer-events-none">
-          <img class="w-[100%] h-[1500px]" src="../images/purple.svg" alt="" />
-        </figure>
-        <!-- bg blue -->
-        <figure
-          class="absolute top-[-50%] -right-[50%] z-0 pointer-events-none"
-        >
-          <img class="w-[80%] h-[1500px]" src="../images/blue.svg" alt="" />
-        </figure>
-        <!----------------------------------------- text ------------------------>
-        <div class="px-6 md:pl-52 lg:pl-0 lg:w-[45%] relative z-40">
-          <h2
-            class="text-center text-2xl text-purple-400 font-extrabold md:text-start md:text-3xl xl:text-4xl"
-          >
-            چت بات حرفه ای صفحه جدا
-          </h2>
-          <p
-            class="mt-10 text-center leading-6 text-sm text-gray-300 md:text-start"
-          >
-            همانطور که در تصویر مشاهده میفرمایید، این چت بات بصورت فیکس در تمام
-            صفحات وبسایت ثابت و موجود است و کاربر میتواند در هر لحظه که اراده
-            کند، با دستیار هوش مصنوعی سایت وارد مکالمه شود.
-          </p>
-          <p
-            class="mt-5 text-center leading-6 text-sm text-gray-300 md:text-start"
-          >
-            قاعدتا نیاز به توضیح نیست که این نسخه حتما نیاز به داشتن سایت دارد!
-            از ویژگی های این نسخه میتواند به موارد زیر اشاره کرد:
-          </p>
-          <ul class="text-sm text-gray-300 my-8 *:mb-2 mx-3">
-            <li>دارای دو موتور قدرتمند اختصاصی Q-SamSmart-e</li>
-            <li>امکان چت بصورت نوشتاری</li>
-            <li>حضور در تمام صفحات سایت</li>
-            <li>دارای دو طرح زیبا</li>
-            <li>دارای حافظه داخلی و نگه داری چت های کاربران</li>
-            <li>امکان ادامه دادن چت ها</li>
-            <li>امکان پاسخ سریع، درسوالات مشابه</li>
-            <li>دارای دیتابیس اختصاصی</li>
-          </ul>
+            وارد حساب کاربری خود شوید
+          </h5>
+          <!-- فرم ورود / عضویت -->
+          <div class="w-full flex justify-center">
+            <section
+              class="sm:w-[60%] md:w-[50%] lg:w-[40%] w-full mx-auto border border-[#2d223f] bg-gradient-to-r from-[#0e012200] via-[#4708715d] to-[#0e012200] backdrop-blur-md rounded-3xl px-4 py-8"
+              id="subMenu"
+            >
+              <h2 class="text-xl font-bold text-purple-400 text-center mb-4">
+                ورود
+              </h2>
 
-          <p
-            class="mt-5 text-center leading-6 text-sm text-gray-300 mb-3 md:text-start"
-          >
-            میتوانید برای مشاهده کامل امکانات دستیار هوش مصنوعی قدرتمند پرنیان،
-            روی لینک مقابل کلیک کرده و از نزدیک امکانات آن را تست کنید.
-          </p>
+              <form class="flex flex-col gap-4 w-full relative z-40">
+                <!-- نام کاربری -->
+                <div class="flex flex-col gap-2">
+                  <label for="username" class="text-sm">نام کاربری</label>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    class="w-full px-3 py-2 rounded-xl bg-[#150a25] border border-purple-500 focus:outline-none focus:border-purple-400"
+                    placeholder="نام کاربری خود را وارد کنید"
+                  />
+                </div>
+
+                <!-- رمز عبور -->
+                <div class="flex flex-col gap-2">
+                  <label for="password" class="text-sm">رمز عبور</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="w-full px-3 py-2 rounded-xl bg-[#150a25] border border-purple-500 focus:outline-none focus:border-purple-400"
+                    placeholder="رمز عبور خود را وارد کنید"
+                  />
+                </div>
+
+                <!-- دکمه‌ها -->
+                <div class="flex flex-col gap-3 pt-4 border-t border-white/20">
+                  <button
+                    type="submit"
+                    class="w-full py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
+                  >
+                    <a
+                      class="w-full h-full flex justify-center items-center"
+                      href=""
+                    >
+                      ورود
+                    </a>
+                  </button>
+                </div>
+              </form>
+            </section>
+          </div>
         </div>
-        <!------------------------------------------- image live chatbot -------->
-        <section
-          class="w-[95%] md:w-[70%] lg:w-[45%] mx-auto sm:h-[600px] border border-purple-600 rounded-2xl mt-20 bg-[#0e0122] relative z-40 overflow-hidden"
-        >
-          <!-- bg purple -->
-          <figure
-            class="absolute bottom-[-50%] -left-96 z-0 pointer-events-none"
-          >
-            <img class="w-[80%] h-[1500px]" src="../images/purple.svg" alt="" />
-          </figure>
-          <!-- bg blue -->
-          <figure
-            class="absolute top-[-50%] -right-[100px] z-0 pointer-events-none"
-          >
-            <img class="w-[80%] h-[1500px]" src="../images/blue.svg" alt="" />
-          </figure>
-          <!-- image -->
-          <div class="w-full h-[90%] relative z-40">
-            <figure class="w-[90%] mx-auto py-20">
-              <img
-                class="w-full h-full object-contain rounded-2xl"
-                src="../images/floting-chat.webp"
-                alt=""
-              />
-            </figure>
-          </div>
-          <!-- text link -->
-          <div class="w-full h-[10%] relative z-40">
-            <div class="flex h-full">
-              <a
-                class="w-full h-full flex justify-center items-center py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
-                href="https://trainingsitedesign.ir/"
-                target="_blank"
-                >ورود به چت بات شناور</a
-              >
-            </div>
-          </div>
-        </section>
       </section>
     </main>
     <!---------------------------------------- footer ------------------------------>
