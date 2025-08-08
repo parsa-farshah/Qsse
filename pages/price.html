@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>price</title>
+    <link rel="stylesheet" href="../style/output.css" />
+  </head>
+  <body>
+    <!-------------------------------------- header -------------------------->
+    <header>
+      <nav
+        class="fixed w-[90%] h-16 border border-[#2d223f] bg-gradient-to-r from-[#0e012200] via-[#4708715d] to-[#0e012200] backdrop-blur-xs rounded-full mx-auto px-5 py-1.5 top-8 left-[5%] right-[5%] flex justify-between items-center 2xl:container 2xl:right-0 2xl:left-0 z-50"
+      >
+        <!-- sign up & sign in -->
+        <div class="hidden lg:flex w-2/12 lg:h-full lg:gap-2">
+          <ul
+            class="w-full flex justify-center items-center text-white gap-2 after:content-[] after:w-0.5 after:h-[60%] after:bg-purple-600 after:absolute"
+          >
+            <li class="w-1/2 flex relative">
+              <a
+                class="w-full text-sm h-[70%] text-center py-2 rounded-xl border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white transition-all duration-300"
+                href="#"
+                >ورود</a
+              >
+            </li>
+
+            <li class="w-1/2 flex relative">
+              <a
+                class="w-full text-sm text-center py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
+                href="#"
+                >عضویت</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--------------------------------------- menu bar ---------------->
+        <div class="w-1/2 h-full lg:hidden" id="menuBar">
+          <div
+            class="relative w-12 h-12 flex flex-col items-center justify-center cursor-pointer group"
+            id="menuIcon"
+          >
+            <span
+              id="firstLine"
+              class="absolute w-6 h-0.5 bg-white transition-all duration-300 ease-in-out translate-y-[-8px]"
+            ></span>
+            <span
+              id="middleLine"
+              class="absolute w-6 h-0.5 bg-white transition-all duration-300 ease-in-out"
+            ></span>
+            <span
+              id="lastLine"
+              class="absolute w-6 h-0.5 bg-white transition-all duration-300 ease-in-out translate-y-[8px]"
+            ></span>
+          </div>
+        </div>
+        <!---------------------- links ------------------------------------------->
+        <ul
+          class="lg:w-8/12 hidden lg:flex lg:justify-center *:text-white **:flex **:justify-between **:items-center"
+        >
+          <!-- صفحه اصلی -->
+          <li class="group">
+            <a
+              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:before:bg-purple-400 group-hover:scale-102 group-hover:transition-all group-hover:duration-300 group-hover:before:duration-300 group-hover:text-purple-400"
+              href="../index.html"
+              >صفحه اصلی</a
+            >
+          </li>
+          <!-- دموی AI -->
+          <li class="group">
+            <a
+              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:before:bg-purple-400 group-hover:scale-102 group-hover:transition-all group-hover:duration-300 group-hover:before:duration-300 group-hover:text-purple-400"
+              href="demoAi.html"
+              >دموی AI</a
+            >
+          </li>
+          <!-- لیست قیمت -->
+          <li class="group">
+            <a
+              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:before:bg-purple-400 group-hover:scale-102 group-hover:transition-all group-hover:duration-300 group-hover:before:duration-300 group-hover:text-purple-400"
+              href=""
+              >لیست قیمت</a
+            >
+          </li>
+          <!-- تماس با ما -->
+          <li class="group">
+            <a
+              class="w-full h-full flex relative px-7 before:content-[] before:w-1.5 before:h-1.5 before:rounded-full before:bg-white before:absolute before:right-2 group-hover:before:bg-purple-400 group-hover:scale-102 group-hover:transition-all group-hover:duration-300 group-hover:before:duration-300 group-hover:text-purple-400"
+              href=""
+              >تماس با ما</a
+            >
+          </li>
+        </ul>
+        <!-------------------------------- logo -------------------------->
+        <div class="w-1/2 h-full flex justify-end lg:w-2/12">
+          <figure class="h-full w-[130px]">
+            <a href="/" class="h-full w-full block">
+              <img
+                class="w-full h-full object-contain"
+                src="../images/logo.png"
+                alt="سامانه هوشمند پرنیان"
+              />
+            </a>
+          </figure>
+        </div>
+      </nav>
+    </header>
+    <!--------------------------------------- menu bar sub menu ------------------->
+    <section
+      class="w-[90%] right-1/2 top-24 translate-x-1/2 mx-auto border border-[#2d223f] bg-gradient-to-r from-[#0e012200] via-[#4708715d] to-[#0e012200] backdrop-blur-md rounded-3xl hidden fixed z-50 flex flex-col items-start justify-start gap-4 px-6 py-8 text-white animate-slide-down"
+      id="subMenu"
+    >
+      <!-- لینک‌های منو -->
+      <div class="flex flex-col gap-6 mb-10">
+        <a
+          href="../index.html"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          خانه
+        </a>
+        <a
+          href="pages/demoAi.html"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          دموی AI
+        </a>
+        <a
+          href="#services"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          خدمات
+        </a>
+        <a
+          href="#portfolio"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          لیست قیمت
+        </a>
+        <a
+          href="#contact"
+          class="text-base font-normal hover:scale-102 transition-all duration-300 hover:text-purple-400"
+        >
+          تماس با ما
+        </a>
+      </div>
+
+      <!-- بخش ورود / عضویت -->
+      <div
+        class="mt-auto w-full flex flex-col gap-3 pt-6 border-t border-white/20 pt-10"
+      >
+        <a
+          href="#login"
+          class="w-full text-center py-2 rounded-xl border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white transition-all duration-300"
+        >
+          ورود
+        </a>
+        <a
+          href="#signup"
+          class="w-full text-center py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
+        >
+          عضویت
+        </a>
+      </div>
+    </section>
+    <!--------------------------------------- main ---------------------------------->
+    <main class="w-full h-full 2xl:container mx-auto px-5">
+      <!------------------------------- چت بات توی صفحه جدا ------------------->
+      <section
+        class="w-full px-[5%] lg:px-[2%] mx-auto pt-36 relative rounded-4xl overflow-hidden pb-28"
+      >
+        <!---------------------- bg purple-------- -->
+        <figure
+          class="absolute bottom-[30%] left-[-80%] z-0 pointer-events-none"
+        >
+          <img class="w-[100%] h-[1500px]" src="../images/purple.svg" alt="" />
+        </figure>
+        <!----------------------- bg blue --------------->
+        <figure
+          class="absolute bottom-[10%] -right-[50%] z-0 pointer-events-none"
+        >
+          <img class="w-[80%] h-[1500px]" src="../images/blue.svg" alt="" />
+        </figure>
+        <!-------------------------- text ------------->
+        <div class="w-full">
+          <h3
+            class="text-center text-2xl text-purple-400 font-extrabold md:text-3xl xl:text-4xl"
+          >
+            لیست قیمت محصولات
+          </h3>
+          <p class="mt-6 text-center leading-6 text-lg text-gray-300 md:mx-56">
+            در نظر داشته باشید از طریق این قسمت میتوانید محصول مورد علاقه خود را
+            انتخاب کرده و به سادگی آن را سفارش دهید. <br />
+            لازم به ذکر است در تمام سرویس ها، نام و لوگوی اختصاصی شما جای گزین
+            خواهد شد.
+          </p>
+        </div>
+        <!---------------------------- text cards------------->
+        <div class="w-full">
+          <p class="mt-16 text-center leading-6 text-lg text-gray-300 md:mx-56">
+            انواع سرویس‌های چت بات مخصوص سایت یا شبکه های اجتماعی
+          </p>
+          <!-- cards -->
+          <section class="w-full mx-auto mt-10 py-16">
+            <!-- card 1 -->
+            <div
+              class="w-[95%] py-8 px-5 mx-auto bg-[#150a25] border border-gray-300 rounded-3xl relative z-30"
+            >
+              <h3 class="text-4xl mb-5 font-extrabold">پلن مسی</h3>
+              <p
+                class="text-lg text-gray-300 mb-5 font-extrabold border-b-[0.5px] border-b-gray-400 pb-5"
+              >
+                نوع سرویس : ربات تلگرام یا اینستاگرام
+              </p>
+              <ul class="py-8">
+                <li class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />سه ماهه
+                  : 2.250 میلیون(15% تخفیف)
+                </li>
+                <li class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />
+                  شش ماهه : 4.500 میلیون (25% تخفیف)
+                </li>
+                <li class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />
+                  دوازده ماهه : 7.800 میلیون (35% تخفیف)
+                </li>
+                <div class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />
+                  پشتیبانی
+                </div>
+                <div class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />
+                  مهلت تحویل: ۲۴ ساعت
+                </div>
+                <!-- border bottom -->
+                <div class="w-full h-[0.5px] bg-gray-400 my-8"></div>
+                <button class="w-full">
+                  <a
+                    class="w-full flex items-center justify-center text-center py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
+                    href="https://qsse.ir/dashboard"
+                    >سفارش دهید</a
+                  >
+                </button>
+              </ul>
+            </div>
+            <!-- card 2 -->
+            <div
+              class="w-[95%] py-8 px-5 mx-auto bg-[#31def540] border border-gray-300 rounded-3xl relative z-30"
+            >
+              <h3 class="text-4xl mb-5 font-extrabold">پلن مسی</h3>
+              <p
+                class="text-lg text-gray-300 mb-5 font-extrabold border-b-[0.5px] border-b-gray-400 pb-5"
+              >
+                نوع سرویس : ربات تلگرام یا اینستاگرام
+              </p>
+              <ul class="py-8">
+                <li class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />سه ماهه
+                  : 2.250 میلیون(15% تخفیف)
+                </li>
+                <li class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />
+                  شش ماهه : 4.500 میلیون (25% تخفیف)
+                </li>
+                <li class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />
+                  دوازده ماهه : 7.800 میلیون (35% تخفیف)
+                </li>
+                <div class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />
+                  پشتیبانی
+                </div>
+                <div class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />
+                  مهلت تحویل: ۲۴ ساعت
+                </div>
+                <!-- border bottom -->
+                <div class="w-full h-[0.5px] bg-gray-400 my-8"></div>
+                <button class="w-full">
+                  <a
+                    class="w-full flex items-center justify-center text-center py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
+                    href="https://qsse.ir/dashboard"
+                    >سفارش دهید</a
+                  >
+                </button>
+              </ul>
+            </div>
+            <!-- card 3 -->
+            <div
+              class="w-[95%] py-8 px-5 mx-auto bg-[#150a25] border border-gray-300 rounded-3xl relative z-30"
+            >
+              <h3 class="text-4xl mb-5 font-extrabold">پلن مسی</h3>
+              <p
+                class="text-lg text-gray-300 mb-5 font-extrabold border-b-[0.5px] border-b-gray-400 pb-5"
+              >
+                نوع سرویس : ربات تلگرام یا اینستاگرام
+              </p>
+              <ul class="py-8">
+                <li class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />سه ماهه
+                  : 2.250 میلیون(15% تخفیف)
+                </li>
+                <li class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />
+                  شش ماهه : 4.500 میلیون (25% تخفیف)
+                </li>
+                <li class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />
+                  دوازده ماهه : 7.800 میلیون (35% تخفیف)
+                </li>
+                <div class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />
+                  پشتیبانی
+                </div>
+                <div class="flex items-center gap-3 text-sm mb-3">
+                  <img class="w-6 h-6" src="../images/tick.svg" alt="" />
+                  مهلت تحویل: ۲۴ ساعت
+                </div>
+                <!-- border bottom -->
+                <div class="w-full h-[0.5px] bg-gray-400 my-8"></div>
+                <button class="w-full">
+                  <a
+                    class="w-full flex items-center justify-center text-center py-2 rounded-xl bg-purple-500 text-white hover:bg-purple-600 transition-all duration-300"
+                    href="https://qsse.ir/dashboard"
+                    >سفارش دهید</a
+                  >
+                </button>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="../js/main.js"></script>
+</html>
