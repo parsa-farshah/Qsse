@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In</title>
+    <title>sign Up</title>
     <link rel="stylesheet" href="../style/output.css" />
   </head>
   <body>
@@ -175,7 +175,7 @@
           <h5
             class="text-center text-2xl text-purple-400 font-extrabold md:text-3xl xl:text-4xl mb-10"
           >
-            وارد حساب کاربری خود شوید
+            ثبت نام کنید
           </h5>
           <!-- فرم ورود / عضویت -->
           <div class="w-full flex justify-center">
@@ -184,19 +184,30 @@
               id="subMenu"
             >
               <h2 class="text-xl font-bold text-purple-400 text-center mb-4">
-                ورود
+                ثبت نام
               </h2>
 
               <form class="flex flex-col gap-4 w-full relative z-40">
-                <!-- نام کاربری -->
+                <!-- ایمیل -->
                 <div class="flex flex-col gap-2">
-                  <label for="username" class="text-sm">نام کاربری</label>
+                  <label for="email" class="text-sm">ایمل</label>
                   <input
-                    type="text"
-                    id="username"
-                    name="username"
+                    type="email"
+                    id="email"
+                    name="email"
                     class="w-full px-3 py-2 rounded-xl bg-[#150a25] border border-purple-500 focus:outline-none focus:border-purple-400"
-                    placeholder="نام کاربری خود را وارد کنید"
+                    placeholder="ایمیل خود را وارد کنید"
+                  />
+                </div>
+                <!-- تلفن -->
+                <div class="flex flex-col gap-2">
+                  <label for="phone" class="text-sm">شماره همراه</label>
+                  <input
+                    type="number"
+                    id="phone"
+                    name="phone"
+                    class="w-full px-3 py-2 rounded-xl bg-[#150a25] border border-purple-500 focus:outline-none focus:border-purple-400"
+                    placeholder="شماره همراه خود را وارد کنید"
                   />
                 </div>
 
@@ -222,7 +233,7 @@
                       class="w-full h-full flex justify-center items-center"
                       href=""
                     >
-                      ورود
+                      ثبت نام
                     </a>
                   </button>
                 </div>
