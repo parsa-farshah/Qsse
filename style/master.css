@@ -4,13 +4,20 @@
   font-family: iranSans;
   src: url(../fonts/Iranian\ Sans.ttf);
 }
+@font-face {
+  font-family: lalezar;
+  src: url(../fonts/Lalezar-Regular.ttf)
+}
 body {
   background-color: #0a0118;
   color: white;
-  font-family: iranSans;
+  font-family: lalezar;
 }
 
 @layer utilities {
+  .lalezar{
+    font-family: lalezar;
+  }
   .slideToRight {
     animation: slideToRight 10s linear infinite alternate;
     &:hover {
@@ -60,3 +67,7 @@ body {
     transform: translateY(0);
   }
 }
+
+/* npx @tailwindcss/cli -i ./src/style/master.css -o ./src/style/output.css --watch */
+
+
