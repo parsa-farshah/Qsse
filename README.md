@@ -62,43 +62,43 @@ Parsa Dehghan Pour Farashah
 
 ### 🌟 Overview
 
-<img src="/src/images/cover.jpg" alt="Project Overview" width="100%">
+<img src="images/cover.jpg" alt="Project Overview" width="100%">
 
 ### 💻 Desktop View
 
-<img src="/src/images/1.jpg" width="48%"> <img src="assets/screenshots/desktop-2.png" width="48%">
+<img src="images/1.jpg" width="48%"> <img src="assets/screenshots/desktop-2.png" width="48%">
 
 ### 💻 Desktop View
 
-<img src="/src/images/2.jpg" width="48%"> <img src="assets/screenshots/desktop-2.png" width="48%">
+<img src="images/2.jpg" width="48%"> <img src="assets/screenshots/desktop-2.png" width="48%">
 
 ### 💻 Desktop View
 
-<img src="/src/images/3.jpg" width="48%"> <img src="assets/screenshots/desktop-2.png" width="48%">
+<img src="images/3.jpg" width="48%"> <img src="assets/screenshots/desktop-2.png" width="48%">
 
 ### 📱 Tablet View
 
-<img src="/src/images/4.jpg" width="60%">
+<img src="images/4.jpg" width="60%">
 
 ### 📱 Tablet View
 
-<img src="/src/images/5.jpg" width="60%">
+<img src="images/5.jpg" width="60%">
 
 ### 📱 Tablet View
 
-<img src="/src/images/6.jpg" width="60%">
+<img src="images/6.jpg" width="60%">
 
 ### 📱 Mobile View
 
-<img src="/src/images/7.jpg" width="45%"> <img src="assets/screenshots/mobile-2.png" width="45%">
+<img src="images/7.jpg" width="45%"> <img src="assets/screenshots/mobile-2.png" width="45%">
 
 ### 📱 Mobile View
 
-<img src="/src/images/8.jpg" width="45%"> <img src="assets/screenshots/mobile-2.png" width="45%">
+<img src="images/8.jpg" width="45%"> <img src="assets/screenshots/mobile-2.png" width="45%">
 
 ### 📱 Mobile View
 
-<img src="/src/images/9.jpg" width="45%"> <img src="assets/screenshots/mobile-2.png" width="45%">
+<img src="images/9.jpg" width="45%"> <img src="assets/screenshots/mobile-2.png" width="45%">
 
 ---
 
