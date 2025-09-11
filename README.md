@@ -8,7 +8,7 @@ I developed all interactive elements and responsive layouts to provide a smooth 
 ---
 
 ## 📅 Created On | تاریخ ساخت
-August 20, 2025 | ۲۹ مرداد ۲۰۲۵
+September 11, 2025 | 20 شهریور 2025
 
 ## 🔗 Live Demo
 [View Live Demo](https://parsa-farshah.github.io/Qsse/)
@@ -37,7 +37,6 @@ August 20, 2025 | ۲۹ مرداد ۲۰۲۵
 
 ## 👨‍💻 Developed By | توسعه‌دهنده
 Parsa Dehghan Pour Farashah  
-[@reyhane](https://github.com/reyhane) – Collaborated on Git workflow & merge
 
 ## 🔧 Project Mentor | مربی پروژه
 [@parsa_ghorbanian_web](https://www.instagram.com/parsa_ghorbanian_web)
@@ -51,7 +50,7 @@ Parsa Dehghan Pour Farashah
 - 💻 GitHub: [parsa-farshah](https://github.com/parsa-farshah)  
 - 📩 Email: parsafarashah2002@gmail.com  
 - 📺 YouTube: [@FrontEndFresh](https://youtube.com/@frontendfresh?si=-2WsIYe-KBTUfwyu)
-
+- 🖍 codePen : [parsa-dehghan-pour-farashah](https://codepen.io/parsa-dehghan)  
 ---
 
 ## 📸 Project Screenshots | پیش‌نمایش پروژه
