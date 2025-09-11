@@ -56,16 +56,32 @@ Parsa Dehghan Pour Farashah
 ## 📸 Project Screenshots | پیش‌نمایش پروژه
 
 ### 🌟 Overview
-<img src="assets/screenshots/cover.png" alt="Project Overview" width="100%">
+
+<img src="src/images/cover.png" alt="Project Overview" width="100%">
 
 ### 💻 Desktop View
-<img src="assets/screenshots/desktop-1.png" width="48%"> <img src="assets/screenshots/desktop-2.png" width="48%"> <img src="assets/screenshots/desktop-3.png" width="48%">
+
+<img src="src/images/1.jpg" width="48%"> <img src="assets/screenshots/desktop-2.png" width="48%">
+
+### 💻 Desktop View
+
+<img src="src/images/2.jpg" width="48%"> <img src="assets/screenshots/desktop-2.png" width="48%">
 
 ### 📱 Tablet View
-<img src="assets/screenshots/tablet.png" width="60%">
+
+<img src="src/images/3.jpg" width="60%">
+
+### 📱 Tablet View
+
+<img src="src/images/4.jpg" width="60%">
 
 ### 📱 Mobile View
-<img src="assets/screenshots/mobile-1.png" width="45%"> <img src="assets/screenshots/mobile-2.png" width="45%">
+
+<img src="src/images/5.jpg" width="45%"> <img src="assets/screenshots/mobile-2.png" width="45%">
+
+### 📱 Mobile View
+
+<img src="src/images/6.jpg" width="45%"> <img src="assets/screenshots/mobile-2.png" width="45%">
 
 ---
 
